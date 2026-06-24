@@ -386,7 +386,7 @@ MonoBehaviour:
   ball: {fileID: 709545258}
   holdPoint: {fileID: 1977648047}
   mainCamera: {fileID: 330585545}
-  throwForce: 50
+  throwForce: 30
   catchRange: 5
 --- !u!1 &410087039
 GameObject:
@@ -527,6 +527,7 @@ GameObject:
   - component: {fileID: 464779789}
   - component: {fileID: 464779788}
   - component: {fileID: 464779787}
+  - component: {fileID: 464779791}
   m_Layer: 0
   m_Name: AI
   m_TagString: Untagged
@@ -549,7 +550,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -630,6 +631,20 @@ Transform:
   - {fileID: 803055631}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!114 &464779791
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 464779786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c33df4218b51a24fbee39392824f329, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AIController2
+  playerTransform: {fileID: 330585546}
+  throwSpeed: 3
 --- !u!1 &709545257
 GameObject:
   m_ObjectHideFlags: 0
